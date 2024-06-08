@@ -6,7 +6,7 @@ const http = require('http');
 const server = http.createServer((req, res) => {
     //Set the response status code to 200
     res.statusCode = 200;
-    res.setHeader('content-Type', 'text?plain');
+    res.setHeader('content-Type', 'text/plain');
     //send "Hello World!"
     res.end('Hello World!\n');
 });
