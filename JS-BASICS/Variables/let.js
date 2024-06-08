@@ -30,5 +30,5 @@ let age = 30;
 //attempting to re-declare a variable with let in the
 //same scope will result in a SyntaxError.
 
-let age = 30;
-let age = 25; // SyntaxError: Identifier 'age' has already been declared
+//let age = 30;
+//let age = 25; // SyntaxError: Identifier 'age' has already been declared
