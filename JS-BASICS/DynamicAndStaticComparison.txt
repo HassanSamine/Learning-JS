@@ -1,0 +1,42 @@
+For a better reading experience follow this link: https://glittery-uranium-0a8.notion.site/Static-and-Dynamic-programming-languages-b0c92d28b3f940d8901e5324e4283394
+
+# Dynamic programming languages:
+
+These programming languages allow variables to change types as the program executes, for example if you make a variable “name=Hassan” you can later change this variable to “name=30”. Any type related errors in this kind of languages is detected until the affected code is executed, which means that if you have a function “add_numbers” that takes two numbers type variable and you assign a string to one of these variables, your error won’t be detected until you run the code.
+
+ Example in Python (Dynamic language):
+
+```python
+def add_numbers(a, b):
+    return a + b
+
+x = 5
+y = "hello"
+
+# This line will cause a type-related error, but it won't be detected until it runs
+result = add_numbers(x, y)
+```
+
+Dynamic languages are often interpreted instead of being compiled (Interpreted languages execute the code line by line at runtime and do not require a compiler, examples of Interpreted languages: JavaScript, Python… / Examples of compiled languages: C, C++, Java).
+
+### *Examples of Dynamic programming languages:*
+
+- Python.
+- JavaScript.
+- Ruby.
+- PHP.
+
+# Static programming languages:
+
+On the other hand static programming languages perform type checking when compiling, so all variables types must be known before the program runs. These languages are typically compiled, which is beneficial for type checking and early error detection.
+
+### *Examples of Dynamic programming languages:*
+
+- **C**.
+- **Java**.
+- **C++**.
+- **Go.**
+
+# Comparison
+
+Dynamic programming languages offer flexibility and ease of use, making them suitable for rapid development and scripting tasks. However, they can suffer from slower performance and runtime errors due to dynamic type checking. Static programming languages, on the other hand, provide better performance and early error detection through compile-time type checking, making them suitable for large-scale, performance-critical, and safety-critical applications. Each type of language has its strengths and is chosen based on the specific needs and constraints of the project at hand.

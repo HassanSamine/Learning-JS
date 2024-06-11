@@ -1,1 +1,57 @@
-https://glittery-uranium-0a8.notion.site/Node-JS-fabe86ee66524a7e949bc4bed73bbce5
+For a better reading experience follow this link: https://glittery-uranium-0a8.notion.site/Node-JS-fabe86ee66524a7e949bc4bed73bbce5
+
+# Node JS
+
+# What is Node.js?
+
+Node.js is a powerful tool that allows us to use JavaScript outside of web browsers. Traditionally, JavaScript was mainly used to make websites interactive, meaning it could only run inside a web browser like Chrome or Firefox. But Node.js changed that!
+
+# **Purpose behind Node.js:**
+
+Before Node.js, if we wanted to create a web application, we needed to use different languages for the front-end (what users see in their browsers) and the back-end (the server that processes requests and sends responses). With Node.js, we can now use JavaScript for both the front-end and the back-end, making web development simpler and more consistent.
+
+# **Change it made in JavaScript programming:**
+
+Node.js opened up new possibilities for JavaScript. Instead of just being a language for making websites interactive, it became a language capable of handling server-side tasks, like creating HTTP servers, handling data, and implementing logic. This expanded the use of JavaScript beyond the browser and made it a versatile language for building all kinds of applications.
+
+# **How it works:**
+
+In Node.js, we can create server-side applications that listen for incoming requests from web browsers. We can handle these requests, process data, and send back responses. We can also use Node.js to serve HTML and CSS files, making it possible to build entire web applications using just JavaScript.
+
+# **Modules in Node.js:**
+
+One of the key features of Node.js is its module system. Modules are like building blocks of code that we can reuse in our applications. For example, if we have a piece of code that we use in multiple places, we can put it in a module and then use that module wherever we need it.
+
+For instance, let's say we have a module called `calculator`:
+
+```jsx
+// calculator.js
+const add = (a, b) => {
+  return a + b;
+};
+
+const subtract = (a, b) => {
+  return a - b;
+};
+
+module.exports = {
+  add: add,
+  subtract: subtract
+};
+
+```
+
+We can then use this module in our code like this:
+
+```jsx
+const calculator = require('./calculator');
+
+console.log(calculator.add(5, 3)); // Outputs: 8
+console.log(calculator.subtract(5, 3)); // Outputs: 2
+```
+
+**Organizing web applications:**
+
+Node.js also helps us organize our web applications better. Before Node.js, we had to manage separate HTML, CSS, and JavaScript files, which could get messy. But with Node.js, we can gather all these files together and serve them from the same place, making our code more organized and easier to manage.
+
+Overall, Node.js has revolutionized the way we use JavaScript, making it a powerful language for building all kinds of applications, from simple websites to complex web applications. It has simplified web development and made it more accessible to developers around the world.
