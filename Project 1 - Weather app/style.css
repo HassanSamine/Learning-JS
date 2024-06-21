@@ -5,12 +5,15 @@
     box-sizing:border-box;
 }
 body{
-    background-color: gray;
+    background-color: #87CEEB;
+}
+.logo{
+    width: 700px;
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #87CEEB, #00BFFF);
+    background: #87CEEB;
     color: #5b3e31;
     margin: 100px auto 0;
     border-radius: 20px;
