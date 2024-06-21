@@ -10,6 +10,18 @@ body{
 .logo{
     width: 700px;
 }
+
+.logo2{
+    width: 280px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Optional: vertically centers items if the header has a height */
+    padding: 10px; /* Optional: adds some padding around the header */
+}
+
+
 .card{
     width: 90%;
     max-width: 470px;
