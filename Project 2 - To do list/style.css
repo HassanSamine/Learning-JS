@@ -66,6 +66,7 @@ ul li{
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     position: relative;
+    cursor: pointer;
 }
 
 ul li::before{
@@ -79,6 +80,7 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
+    
 }
 ul li.checked{
     color: #555;
