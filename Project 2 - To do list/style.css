@@ -4,10 +4,27 @@
     font-family: 'Poppings', sans-serif;
     box-sizing:border-box;
 }
+
+.fullLogo{
+    width:200px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; 
+}
+
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677,#4e085f );
+    background: linear-gradient(135deg, #E09F05,#D6350E );
     padding: 10px;
 }
 
@@ -29,8 +46,8 @@
 }
 
 .todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
+    width: 100px;
+    margin-left: 240px;
 }
 
 .row{
@@ -54,7 +71,7 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: linear-gradient(135deg, #E09F05,#D6350E );
     color: #fff;
     font-size: 16px;
     cursor: pointer;
