@@ -1,37 +1,108 @@
 const questions = [
     {
-        question: "Which is the largest animal in the world?",
+        question: "What is the full name of the football club known as Raja Casablanca?",
         answers: [
-            { text: "Shark", correct: false },
-            { text: "Blue whale", correct: true },
-            { text: "Elephant", correct: false },
-            { text: "Giraffe", correct: false },
+            { text: "Raja Club Athletic", correct: true },
+            { text: "Raja Club de Casablanca", correct: false },
+            { text: "Raja Casablanca Athletic", correct: false },
+            { text: "Raja Athletic Casablanca ", correct: false },
             
 
         ]
     },
+
     {
-        question: "Which is the largest animal2 in the world?",
+        question: "In what year was Raja Casablanca founded?",
         answers: [
-            { text: "Shark", correct: false },
-            { text: "Blue whale", correct: true },
-            { text: "Elephant", correct: false },
-            { text: "Giraffe", correct: false },
+            { text: "1945", correct: false },
+            { text: "1949", correct: true },
+            { text: "1953", correct: false },
+            { text: "1957", correct: false },
+            
+        ]
+
+    },
+
+    {
+        question: "What is the name of Raja Casablanca's home stadium?",
+        answers: [
+            { text: "Stade Mohammed V", correct: true },
+            { text: "Stade de Marrakech", correct: false },
+            { text: "Stade Moulay Abdellah", correct: false },
+            { text: "Stade Fès", correct: false }
+        ]
+    },
+
+    {
+        question: "What is the nickname of Raja Casablanca?",
+        answers: [
+            { text: "The Green Eagles", correct: true },
+            { text: "The Red Lions", correct: false },
+            { text: "The Blue Sharks", correct: false },
+            { text: "The White Tigers", correct: false },
+            
+        ]
+
+    },
+
+    {
+        question: "Who is the top scorer for Raja Casablanca in recorded history?",
+        answers: [
+            { text: "Salaheddine Bassir", correct: false },
+            { text: "Mohsine Moutouali", correct: false },
+            { text: "Ben Malango", correct: false },
+            { text: "Mouhssine Iajour", correct: true },
+            
+        ]
+
+    },
+
+    {
+        question: "In which year did Raja Casablanca win their first Moroccan League Title?",
+        answers: [
+            { text: "1950", correct: false },
+            { text: "1988", correct: true },
+            { text: "1987", correct: false },
+            { text: "1989", correct: false },
             
         ]
 
     },
     {
-        question: "Which is the largest animal3 in the world?",
+        question: "Who was the coach that led Raja Casablanca to win the 2012 Botola, which qualified them for the 2013 FIFA Club World Cup?",
         answers: [
-            { text: "Shark", correct: false },
-            { text: "Blue whale", correct: true },
-            { text: "Elephant", correct: false },
-            { text: "Giraffe", correct: false },
+            { text: "Mohammed Fakhir", correct: true },
+            { text: "Faouzi Benzarti", correct: false },
+            { text: "Rachid Taoussi", correct: false },
+            { text: "Henri Michel", correct: false },
             
         ]
 
-    }
+    },
+    {
+        question: "Which of these players never played for Raja Casablanca?",
+        answers: [
+            { text: "Omar Najdi", correct: false },
+            { text: "Ighodaro Osaguona", correct: false },
+            { text: "Abdelfattah Hadraf", correct: true },
+            { text: "Talal El Karkouri", correct: false },
+            
+        ]
+
+    },
+    {
+        question: "Which of these managers never coached for Raja Casablanca?",
+        answers: [
+            { text: "Vahid Halilhodžić", correct: false },
+            { text: "Bertrand Marchand", correct: false },
+            { text: "Rubén Albés", correct: true },
+            { text: "Henri Michel", correct: false },
+            
+        ]
+
+    },
+
+
 
 ];
 
