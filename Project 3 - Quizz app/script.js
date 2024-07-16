@@ -6,7 +6,7 @@ const questions = [
             { text: "Raja Club de Casablanca", correct: false },
             { text: "Raja Casablanca Athletic", correct: false },
             { text: "Raja Athletic Casablanca ", correct: false },
-            
+
 
         ]
     },
@@ -18,7 +18,7 @@ const questions = [
             { text: "1949", correct: true },
             { text: "1953", correct: false },
             { text: "1957", correct: false },
-            
+
         ]
 
     },
@@ -40,7 +40,7 @@ const questions = [
             { text: "The Red Lions", correct: false },
             { text: "The Blue Sharks", correct: false },
             { text: "The White Tigers", correct: false },
-            
+
         ]
 
     },
@@ -52,7 +52,7 @@ const questions = [
             { text: "Mohsine Moutouali", correct: false },
             { text: "Ben Malango", correct: false },
             { text: "Mouhssine Iajour", correct: true },
-            
+
         ]
 
     },
@@ -64,7 +64,7 @@ const questions = [
             { text: "1988", correct: true },
             { text: "1987", correct: false },
             { text: "1989", correct: false },
-            
+
         ]
 
     },
@@ -75,7 +75,7 @@ const questions = [
             { text: "Faouzi Benzarti", correct: false },
             { text: "Rachid Taoussi", correct: false },
             { text: "Henri Michel", correct: false },
-            
+
         ]
 
     },
@@ -86,7 +86,7 @@ const questions = [
             { text: "Ighodaro Osaguona", correct: false },
             { text: "Abdelfattah Hadraf", correct: true },
             { text: "Talal El Karkouri", correct: false },
-            
+
         ]
 
     },
@@ -97,11 +97,21 @@ const questions = [
             { text: "Bertrand Marchand", correct: false },
             { text: "Rubén Albés", correct: true },
             { text: "Henri Michel", correct: false },
-            
+
         ]
 
     },
+    {
+        question: "Who was the coach that led Raja Casablanca to their third champions league title in 1999?",
+        answers: [
+            { text: "Vahid Halilhodžić", correct: false },
+            { text: "Bertrand Marchand", correct: false },
+            { text: "Mohammed Fakhir", correct: false },
+            { text: "Oscar Fulloné", correct: true },
 
+        ]
+
+    },
 
 
 ];
@@ -159,20 +169,35 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-function handleNextButton(){
+function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
 
-    }else {
+    } else {
         showScore();
     }
 }
-function showScore(){
+function showScore() {
     answerButtons.innerHTML = '';
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
+    if (score < questions.length / 2) {
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! - Yakma Wydadi?`;
+        nextButton.innerHTML = "Play Again";
+        nextButton.style.display = "block";
+    }
+    else if (score === questions.length) {
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! - Bhal le prasson nta Rajawi 7a9i9i`;
+        nextButton.innerHTML = 'Play Again';
+        nextButton.style.display = 'block';
+    } else if (score >= questions.length / 2) {
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! - Ma3lkch`;
+        nextButton.innerHTML = 'Play Again';
+        nextButton.style.display = 'block';
+    } else {
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+        nextButton.innerHTML = 'Play Again';
+        nextButton.style.display = 'block';
+    }
 }
 
 nextButton.addEventListener("click", () => {
